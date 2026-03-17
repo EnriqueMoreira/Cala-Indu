@@ -1,3 +1,147 @@
+¡Perfecto! He revisado el enlace y veo que el tamaño de las imágenes en las tarjetas de productos (“New Arrival” y “Best Seller”) es demasiado grande comparado con un diseño habitual tipo Card.  
+Te entregaré los dos archivos ajustados para que los **productos y banners tengan un tamaño más armónico**:
+
+---
+
+## **Nuevo `index.html`**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOCO | Cala Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">LOCO</div>
+      <nav>
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Featured</a></li>
+        </ul>
+      </nav>
+      <div class="header-icons">
+        <select>
+          <option>EN</option>
+        </select>
+        <span class="icon">🔍</span>
+        <span class="icon">♡</span>
+        <span class="icon">🛒</span>
+      </div>
+    </header>
+
+    <div class="big-title">FEEL THE VIBES</div>
+    <div class="catch-bar">
+      <span>★ CATCH THE STYLE ★</span>
+      <span> CATCH THE STYLE ★ </span>
+      <span> CATCH THE STYLE ★ </span>
+      <span> CATCH THE STYLE ★ </span>
+    </div>
+
+    <section class="hero">
+      <div class="hero-content">
+        <div>
+          <h2>Get ready for new season with Loco</h2>
+          <p>Loco brings something new this season, specially designed for every style you need.</p>
+          <button>Explore items</button>
+        </div>
+        <div class="hero-arrival arrival-1">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="" />
+          <span>New Arrival</span>
+        </div>
+        <div class="hero-arrival arrival-2">
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" alt="" />
+          <span>New Arrival</span>
+        </div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="Main banner" class="hero-main-img">
+    </section>
+
+    <section class="catalog-section">
+      <div class="section-head">
+        <h2>New Arrival</h2>
+        <button class="see-all">See All</button>
+      </div>
+      <div class="products-row">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
+          <h3>Daisy Shirt</h3>
+          <div class="stars">★★★★★</div>
+          <div class="reviews">(129 Reviews)</div>
+          <div class="price">$58.00</div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="">
+          <h3>Rei Blue Jacket</h3>
+          <div class="stars">★★★★★</div>
+          <div class="reviews">(92 Reviews)</div>
+          <div class="price">$67.00</div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308" alt="">
+          <h3>Rozz Jacket</h3>
+          <div class="stars">★★★★★</div>
+          <div class="reviews">(72 Reviews)</div>
+          <div class="price">$55.00</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section">
+      <div class="section-head">
+        <h2>Best Seller</h2>
+        <button class="see-all">See All</button>
+      </div>
+      <div class="products-row bestseller">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df" alt="">
+          <h3>Molly Jacket</h3>
+          <div class="stars">★★★★★</div>
+          <div class="reviews">(3k Reviews)</div>
+          <div class="price">$48.00</div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1519121789247-1e82c9525883" alt="">
+          <h3>Pop Star Neon Jacket</h3>
+          <div class="stars">★★★★★</div>
+          <div class="reviews">(2k Reviews)</div>
+          <div class="price">$70.00</div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca" alt="">
+          <h3>Gaby Half-Zipped</h3>
+          <div class="stars">★★★★★</div>
+          <div class="reviews">(3k Reviews)</div>
+          <div class="price">$45.00</div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1503342452485-86a097568fa0" alt="">
+          <h3>Smith Sweatshirt</h3>
+          <div class="stars">★★★★★</div>
+          <div class="reviews">(5k Reviews)</div>
+          <div class="price">$39.00</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+```
+
+---
+
+## **Nuevo `style.css`**
+
+```css
 body {
   background: #e6e6e6;
   font-family: 'Montserrat', Arial, sans-serif;
@@ -140,8 +284,8 @@ nav ul li a:hover {
 }
 
 .hero-main-img {
-  width: 370px;
-  height: 367px;
+  width: 330px;
+  height: 295px;
   object-fit: cover;
   border-radius: 8px;
   position: absolute;
@@ -165,8 +309,8 @@ nav ul li a:hover {
 }
 
 .hero-arrival img {
-  width: 65px;
-  height: 55px;
+  width: 55px;
+  height: 41px;
   border-radius: 6px 6px 0 0;
   object-fit: cover;
   margin-bottom: 2px;
@@ -177,7 +321,7 @@ nav ul li a:hover {
   color: #fff;
   padding: 1.5px 10px;
   border-radius: 3px 3px 9px 9px;
-  font-size: .85rem;
+  font-size: .80rem;
   font-weight: 650;
   margin-top: -3px;
 }
@@ -227,6 +371,7 @@ nav ul li a:hover {
   border-radius: 12px;
   padding: 18px 18px 16px 18px;
   flex: 1 1 0;
+  min-width: 0;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -237,58 +382,3 @@ nav ul li a:hover {
 
 .product-card:hover {
   box-shadow: 0 8px 32px 0 rgba(78, 52, 14, .10);
-}
-
-.product-card img {
-  width: 120px;
-  height: 128px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 14px;
-  align-self: center;
-}
-
-.product-card h3 {
-  font-size: 1.09em;
-  margin: 0 0 3px 0;
-  font-weight: 700;
-  color: #181818;
-}
-
-.product-card .stars {
-  font-size: .98em;
-  color: #FFB41A;
-  letter-spacing: 0.07em;
-}
-
-.product-card .reviews {
-  font-size: .93em;
-  color: #888;
-  margin-bottom: 8px;
-}
-
-.product-card .price {
-  font-size: 1.05em;
-  color: #181818;
-  font-weight: 700;
-}
-
-.products-row.bestseller .product-card {
-  background: linear-gradient(110deg, #b92b27 7%, #ffcb52 93%);
-  color: #fff;
-}
-
-.products-row.bestseller .product-card h3,
-.products-row.bestseller .product-card .price,
-.products-row.bestseller .product-card .reviews {
-  color: #fff;
-}
-
-@media (max-width: 950px) {
-  .container { max-width: 99vw; }
-  .catch-bar, .big-title { font-size: 1.6rem; }
-  .hero { flex-direction: column; min-height: 330px;}
-  .hero-main-img { width: 100%; position: static; margin-top: 10px;}
-  .hero-content { padding: 17px 12px;}
-  .products-row { flex-direction: column; gap: 16px;}
-}
