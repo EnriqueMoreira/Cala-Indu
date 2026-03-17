@@ -139,3 +139,54 @@ section {
   padding: 15px;
   border-radius: 8px;
 }
+/* CONTENEDOR GENERAL */
+section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+/* SOBRE */
+#sobre p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+#sobre ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#sobre li {
+  margin: 8px 0;
+}
+
+/* COLECCIÓN */
+#coleccion {
+  text-align: center;
+}
+
+#coleccion h3 {
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.producto {
+  background: white;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* BOTÓN WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  border-radius: 50%;
+  padding: 12px;
+}
