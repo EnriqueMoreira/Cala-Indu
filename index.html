@@ -1,79 +1,129 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cala</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>LOCO | Cala Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <div class="container">
+    <header>
+      <div class="logo">LOCO</div>
+      <nav>
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Featured</a></li>
+        </ul>
+      </nav>
+      <div class="header-icons">
+        <select>
+          <option>EN</option>
+        </select>
+        <span class="icon">🔍</span>
+        <span class="icon">♡</span>
+        <span class="icon">🛒</span>
+      </div>
+    </header>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <h1 class="logo">CALA</h1>
+    <div class="big-title">FEEL THE VIBES</div>
+    <div class="catch-bar">
+      <span>★ CATCH THE STYLE ★</span>
+      <span> CATCH THE STYLE ★ </span>
+      <span> CATCH THE STYLE ★ </span>
+      <span> CATCH THE STYLE ★ </span>
+    </div>
 
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#coleccion">Colección</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#">Contacto</a>
-  </nav>
-</header>
+    <section class="hero">
+      <div class="hero-content">
+        <div>
+          <h2>Get ready for new season with Loco</h2>
+          <p>Loco brings something new this season, specially designed for every style you need.</p>
+          <button>Explore items</button>
+        </div>
+        <div class="hero-arrival arrival-1">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="" />
+          <span>New Arrival</span>
+        </div>
+        <div class="hero-arrival arrival-2">
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" alt="" />
+          <span>New Arrival</span>
+        </div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="Main banner" class="hero-main-img">
+    </section>
 
-<!-- HERO PRO -->
-<section class="hero">
-  <div class="hero-text">
-    <h2>FEEL THE STYLE</h2>
-    <p>Moda femenina seleccionada con estilo, calidez y personalidad en La Plata.</p>
-    <a href="#coleccion" class="btn">Explorar prendas</a>
+    <section class="catalog-section">
+      <div class="section-head">
+        <h2>New Arrival</h2>
+        <button class="see-all">See All</button>
+      </div>
+      <div class="products-row">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
+          <h3>Daisy Shirt</h3>
+          <div class="stars">★★★★★</div>
+          <div class="reviews">(129 Reviews)</div>
+          <div class="price">$58.00</div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="">
+          <h3>Rei Blue Jacket</h3>
+          <div class="stars">★★★★★</div>
+          <div class="reviews">(92 Reviews)</div>
+          <div class="price">$67.00</div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308" alt="">
+          <h3>Rozz Jacket</h3>
+          <div class="stars">★★★★★</div>
+          <div class="reviews">(72 Reviews)</div>
+          <div class="price">$55.00</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section">
+      <div class="section-head">
+        <h2>Best Seller</h2>
+        <button class="see-all">See All</button>
+      </div>
+      <div class="products-row bestseller">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df" alt="">
+          <h3>Molly Jacket</h3>
+          <div class="stars">★★★★★</div>
+          <div class="reviews">(3k Reviews)</div>
+          <div class="price">$48.00</div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1519121789247-1e82c9525883" alt="">
+          <h3>Pop Star Neon Jacket</h3>
+          <div class="stars">★★★★★</div>
+          <div class="reviews">(2k Reviews)</div>
+          <div class="price">$70.00</div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca" alt="">
+          <h3>Gaby Half-Zipped</h3>
+          <div class="stars">★★★★★</div>
+          <div class="reviews">(3k Reviews)</div>
+          <div class="price">$45.00</div>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1503342452485-86a097568fa0" alt="">
+          <h3>Smith Sweatshirt</h3>
+          <div class="stars">★★★★★</div>
+          <div class="reviews">(5k Reviews)</div>
+          <div class="price">$39.00</div>
+        </div>
+      </div>
+    </section>
   </div>
-</section>
-
-<!-- COLECCIÓN -->
-<section id="coleccion">
-  <h2 class="section-title">Nueva Colección</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <img src="https://picsum.photos/300/400?random=1">
-      <h3>Vestido Lino Beige</h3>
-      <p>$45.000</p>
-    </div>
-
-    <div class="card">
-      <img src="https://picsum.photos/300/400?random=2">
-      <h3>Blusa Plumeti</h3>
-      <p>$32.000</p>
-    </div>
-
-    <div class="card">
-      <img src="https://picsum.photos/300/400?random=3">
-      <h3>Pantalón Palazzo Negro</h3>
-      <p>$38.000</p>
-    </div>
-
-    <div class="card">
-      <img src="https://picsum.photos/300/400?random=4">
-      <h3>Falda Midi Terracota</h3>
-      <p>$29.000</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- SOBRE -->
-<section id="sobre" class="about">
-  <h2>Sobre Cala</h2>
-  <p>
-    Curaduría boutique de moda femenina en La Plata.  
-    Seleccionamos prendas con identidad, elegancia y calidez.
-  </p>
-</section>
-
-<!-- WHATSAPP -->
-<a href="https://wa.me/549215909009" class="whatsapp">💬</a>
-
 </body>
 </html>
