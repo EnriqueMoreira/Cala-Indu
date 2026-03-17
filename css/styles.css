@@ -1,4 +1,6 @@
-/* Reset básico */
+body {
+  background: red;
+} Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +10,7 @@
 /* Body */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: red;
   color: #333;
 }
 
